@@ -1,0 +1,209 @@
+/*Custom Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
+
+
+
+body{
+    background: #0f0e1c;
+    color: #eeeaff;
+    font-family: 'Lato';
+    font-weight: 200;
+    font-size: 17px;
+    overflow-x: hidden;
+}
+.container{
+    padding: 40px 80px 40px 80px;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.rooms-list{
+
+}
+.content-console{
+    isplay: block;
+    top: 0;
+    overflow-y: hidden;
+    height: 100%;
+    position: relative;
+    /* top: 2%; */
+    /* left: 2%; */
+    pointer-events: none;
+}
+
+
+
+.auth-menu{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+.auth-menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.auth-menu li a{
+    color: #eeeaff;
+    text-decoration: double;
+}
+.right{
+    float: right;
+}
+
+.output{
+    overflow-y: hidden;
+    position: absolute;
+    padding: 3rem 2rem;
+    pointer-events: auto;
+    text-shadow: 0rem 0.2rem 1rem #c5d2ff;
+    z-index: -1;
+    line-height: 30px;
+    width: 100%;
+}
+
+
+#console_output{
+    display:block;
+    left:0;
+    width:100%;
+    overflow:hidden;
+    word-break: break-all;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+}
+
+#console_input{
+    display:inline;
+    width:100%;
+    overflow:hidden;
+    word-break: break-all;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+}
+
+#console_cursor{
+    font-weight:bold;
+    display:inline;
+    position:relative;
+    left:0px;
+    -webkit-animation: cursor_blinker 1.2s infinite;
+    -ms-animation: cursor_blinker 1.2s infinite;
+    -webkitanimation-timing-function: linear;
+}
+
+@-webkit-keyframes cursor_blinker {
+    0%   { opacity: 0; }
+    49%  { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@-ms-keyframes cursor_blinker {
+    0%   { opacity: 0; }
+    49%  { opacity: 0; }
+    50%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.notif{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    color: #000;
+    top: 20px;
+    z-index: 2000;
+}
+.notif p {
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    padding: 6px 20px 6px 20px;
+    display: table;
+    margin: auto;
+}
+
+.notif i{
+    font-size: 15px;
+    margin-right: 8px;
+    position: relative;
+    top: -1px;
+}
+
+#sideBar{
+    position: absolute;
+    height: 100%;
+    width: 400px;
+    right: -400px;
+    background: #fff;
+    color: #0f0e1c;
+    padding: 40px 50px;
+    display: none;
+    box-shadow: 0rem 0.2rem 1rem rgba(255, 255, 255, 0.61);
+    z-index: 2000;
+    overflow: auto;
+    line-height: 30px;
+
+}
+#sideBar a{
+    color: #0f0e1c;
+    text-decoration: underline;
+}
+
+#roomname {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+}
+
+
+/*HELP */
+
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    color: #0f0e1c;
+    background: #fff;
+
+}
+
+#blackbar{
+    position: fixed;
+    background: #000;
+    left: 0px;
+    height: 100%;
+    width: 100px;
+    top: 0px;
+    bottom: 0px;
+}
+
+#wrapper #tab{
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10;
+}
+
+#wrapper #tab a{
+    color: #0f0e1c;
+    text-decoration: underline;
+}
+
+#wrapper #tab a span{
+    font-size: 1em;
+    padding-left: 5px;
+}
+
+#wrapper #content {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+#wrapper #content h1{
+    font-size: 22px;
+}
+#wrapper #content p{
+
+}
